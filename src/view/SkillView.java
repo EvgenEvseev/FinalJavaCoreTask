@@ -30,7 +30,7 @@ public class SkillView extends ViewDraft  {
                     System.out.println("Введите ID навыка:");
                     id = scanLong();
                     ArrayList<Long> IDs = dao.getIds(path);
-                    System.out.println(IDs);
+                    
                     for (long d : IDs) {
                         if (Objects.equals(id, d)){
                             System.out.println("ID уже занят...");
